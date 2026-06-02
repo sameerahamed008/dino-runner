@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dino Escape</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🦖 Dino Escape</h1>
+
+    <div class="top-panel">
+
+        <div>
+            <label>Difficulty:</label>
+
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn">Start Game</button>
+            <button id="restartBtn">Restart</button>
+        </div>
+
+        <div class="score">
+            Score: <span id="score">0</span>
+        </div>
+
+    </div>
+
+    <canvas id="gameCanvas" width="1000" height="400"></canvas>
+
+    <div class="tutorial">
+        <h2>🎮 Tutorial</h2>
+
+        <p>⬆️ Spacebar / Up Arrow = Jump</p>
+        <p>🦖 Avoid humans and cars</p>
+        <p>🏆 Survive longer to increase score</p>
+        <p>⚡ Higher difficulty = Faster obstacles</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
